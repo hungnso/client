@@ -8,3 +8,5 @@ export const getProducts = async (sort, order, page, perPage = 4) =>
         page,
         perPage,
     });
+
+export const getProductsCount = async () => await axios.get(`/products/total`);
